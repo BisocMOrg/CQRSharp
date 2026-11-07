@@ -2,6 +2,25 @@
 
 All notable changes to CQRSharp are documented here. This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [5.1.1]
+
+A patch release: dependency updates only, with no change to CQRSharp's code or public API. No 5.1.0 package depended
+on a version with a known vulnerability; this release moves each dependency to the current patch of its line. Upgrading
+from 5.1.0 needs no code or schema change.
+
+### Changed
+
+- The minimum dependency versions the packages bring in:
+  - Microsoft.Extensions and Microsoft.Bcl.AsyncInterfaces: 9.0.2 → 9.0.22.
+  - EF Core (`CQRSharp.EntityFrameworkCore`): 8.0.10 → 8.0.33 on `net8.0` (still below 9), 9.0.2 → 9.0.22 on `net9.0`,
+    10.0.0 → 10.0.14 on `net10.0`.
+  - StackExchange.Redis (`CQRSharp.Redis`): 2.8.16 → 2.13.23.
+  - FluentValidation (`CQRSharp.FluentValidation`): 12.1.1 → 12.2.0.
+  - xunit.v3 (`CQRSharp.Testing.Xunit.V3`): 4.0.1 → 4.0.2.
+- The `cqrsharp` template references CQRSharp 5.1.1, and Microsoft.Extensions.Hosting 9.0.22 on `net9.0` and 10.0.14 on
+  `net10.0`.
+- Dependabot no longer opens pull requests; vulnerable dependencies are reported as Dependabot alerts.
+
 ## [5.1.0]
 
 A minor release: no breaking changes to the public API, so a 5.0 application upgrades by bumping the package versions.

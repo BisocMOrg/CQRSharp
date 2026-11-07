@@ -25,7 +25,7 @@
         <Title>RabbitMQ transport for CQRSharp: integration events through the outbox.</Title>
         <Description>A Native-AOT-compatible RabbitMQ transport for CQRSharp. Durable notifications routed to RabbitMQ are forwarded through the outbox (atomic with the request's data, at least once, ordered per partition key) with mandatory, persistent, publisher-confirmed publishes; received notifications are taken into the outbox through the inbox, deduplicated by message id, and acknowledged only once stored, then delivered to the local handlers with their own retries and dead letters. Declares its topology (topic exchange, quorum queues, dead-letter queues) unless told the topology exists, with per-key consumer lanes, single active consumer, graceful shutdown, a health check, and CQRSharp's metrics and tracing.</Description>
         <PackageReleaseNotes>
-            Version 5.1.0. First release: UseRabbitMq(...) inside UseOutbox(...), or AddCqrsRabbitMq(...), forwards the notifications it is told to publish to RabbitMQ through the outbox and takes the ones its consumers receive into it; AddCqrsRabbitMq() on the health checks builder reports the connections and consumers.
+            Version 5.1.1. Dependency update only: the Microsoft.Extensions packages it references move to 9.0.22.
             See https://github.com/BisocM/CQRSharp/blob/v$(Version)/CHANGELOG.md for the full notes.
         </PackageReleaseNotes>
     </PropertyGroup>

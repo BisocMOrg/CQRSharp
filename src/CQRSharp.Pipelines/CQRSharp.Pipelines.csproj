@@ -16,7 +16,7 @@
         <Title>The pipeline behaviors and fluent builder of CQRSharp.</Title>
         <Description>The pipeline behaviors of CQRSharp (validation, exception handling, logging, rate limiting, resilience, timeouts, idempotency with result replay, and the unit of work) and ICqrsBuilder, the fluent builder AddCqrsGenerated(b => ...) configures, including the outbox and idempotency store choice. The builder registers validation and exception handling by default; every other behavior runs only when its verb is called.</Description>
         <PackageReleaseNotes>
-            Version 5.1.0. A notification scheduled inside a transactional request is stored with the unit of work's commit like any other.
+            Version 5.1.1. Dependency update only: Microsoft.Extensions.DependencyInjection.Abstractions 9.0.22.
             See https://github.com/BisocM/CQRSharp/blob/v$(Version)/CHANGELOG.md for the full notes; upgrading from 5.0 needs no code or schema change.
         </PackageReleaseNotes>
     </PropertyGroup>
