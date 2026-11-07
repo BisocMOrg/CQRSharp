@@ -101,8 +101,8 @@ dotnet add package CQRSharp.EntityFrameworkCore
 - a durable `IIdempotencyStore`: a keyed table with an optimistic-concurrency claim and a retention window;
 - `EfCoreUnitOfWork<TContext>`, the unit of work over the context's transaction.
 
-Each target framework of the package is built against its own EF Core major: `net8.0` against EF Core 8 (8.0.10 or
-later, below 9), `net9.0` against EF Core 9 (9.0.2 or later), `net10.0` against EF Core 10 (10.0.0 or later). An app on
+Each target framework of the package is built against its own EF Core major: `net8.0` against EF Core 8 (8.0.33 or
+later, below 9), `net9.0` against EF Core 9 (9.0.22 or later), `net10.0` against EF Core 10 (10.0.14 or later). An app on
 `net8.0` cannot use EF Core 9; target `net9.0` for it.
 
 ```csharp

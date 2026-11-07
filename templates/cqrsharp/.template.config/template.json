@@ -34,8 +34,8 @@
         "datatype": "string",
         "cases": [
           { "condition": "(Framework == \"net8.0\")", "value": "8.0.1" },
-          { "condition": "(Framework == \"net9.0\")", "value": "9.0.2" },
-          { "condition": "(Framework == \"net10.0\")", "value": "10.0.0" }
+          { "condition": "(Framework == \"net9.0\")", "value": "9.0.22" },
+          { "condition": "(Framework == \"net10.0\")", "value": "10.0.14" }
         ]
       }
     }
